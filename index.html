@@ -99,7 +99,7 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        $.getJSON('http://coronavirus-19-api.herokuapp.com/countries/turkey',function(data){
+        $.getJSON('https://coronavirus-19-api.herokuapp.com/countries/turkey',function(data){
             $("#cases").html(data.cases);
             $('#cases').addClass("bad");
             $("#todayCases").html(data.todayCases);
