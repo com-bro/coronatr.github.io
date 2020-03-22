@@ -123,8 +123,8 @@ const formatter = new Intl.NumberFormat('en-US', {
    maximumFractionDigits: 2,
 });
 
-
-  function renk() 
+setInterval(
+  function () 
   {
     $('#recovered').addClass("good");
         if($('#todayDeaths').text() == "0"){
@@ -143,8 +143,7 @@ const formatter = new Intl.NumberFormat('en-US', {
                 var oran = s/d;
                 oran = oran.toFixed(2);
         $("#deathPerCase").html('Her '+oran+' hastadan biri ölüyor');
-  }
-        renk();
+  },2500);
     </script>
 </body>
 </html>
