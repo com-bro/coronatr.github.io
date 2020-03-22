@@ -124,8 +124,7 @@ const formatter = new Intl.NumberFormat('en-US', {
 });
 
 
-            setTimeout(
-  function() 
+  function renk() 
   {
     $('#recovered').addClass("good");
         if($('#todayDeaths').text() == "0"){
@@ -144,7 +143,8 @@ const formatter = new Intl.NumberFormat('en-US', {
                 var oran = s/d;
                 oran = oran.toFixed(2);
         $("#deathPerCase").html('Her '+oran+' hastadan biri ölüyor');
-  }, 2500);
+  }
+        renk();
     </script>
 
 <script src="/__/firebase/7.12.0/firebase-app.js"></script>
